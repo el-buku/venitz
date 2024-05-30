@@ -1,0 +1,85 @@
+{
+    "version": 1,
+    "author": "elbuku",
+    "editor": "wokwi",
+    "url": "https://wokwi.com/projects/398841658950252545",
+    "parts": [
+      {
+        "type": "board-esp32-devkit-c-v4",
+        "id": "esp",
+        "top": 363.14,
+        "left": -111.5,
+        "rotate": 90,
+        "attrs": {}
+      },
+      {
+        "type": "wokwi-pushbutton",
+        "id": "btn1",
+        "top": -166.6,
+        "left": -249.6,
+        "attrs": { "color": "green", "label": "Video 1" }
+      },
+      {
+        "type": "wokwi-pushbutton",
+        "id": "btn2",
+        "top": -86.6,
+        "left": -249.6,
+        "attrs": { "color": "green", "label": "Video 2" }
+      },
+      {
+        "type": "wokwi-pushbutton",
+        "id": "btn3",
+        "top": -6.6,
+        "left": -249.6,
+        "attrs": { "color": "green", "label": "Video 3" }
+      },
+      {
+        "type": "wokwi-pushbutton",
+        "id": "btn4",
+        "top": 73.4,
+        "left": -249.6,
+        "attrs": { "color": "green", "label": "Video 4" }
+      },
+      {
+        "type": "wokwi-pushbutton",
+        "id": "btn5",
+        "top": 153.4,
+        "left": -249.6,
+        "attrs": { "color": "green", "label": "Video 5" }
+      },
+      {
+        "type": "wokwi-pushbutton",
+        "id": "btn6",
+        "top": 233.4,
+        "left": -249.6,
+        "attrs": { "color": "green", "label": "Video 6" }
+      },
+      {
+        "type": "wokwi-breadboard-mini",
+        "id": "bb1",
+        "top": -56.7,
+        "left": -140.5,
+        "rotate": 90,
+        "attrs": {}
+      }
+    ],
+    "connections": [
+      [ "esp:TX", "$serialMonitor:RX", "", [] ],
+      [ "esp:RX", "$serialMonitor:TX", "", [] ],
+      [ "esp:GND.1", "bb1:17b.j", "black", [ "h0" ] ],
+      [ "btn6:2.r", "bb1:17b.i", "black", [ "h57.8", "v-188.6" ] ],
+      [ "btn5:2.r", "bb1:17b.h", "black", [ "h38.6", "v-118.2" ] ],
+      [ "btn4:2.r", "bb1:17b.g", "black", [ "h29", "v-57.4" ] ],
+      [ "btn3:2.r", "bb1:16b.j", "black", [ "h29", "v22.6" ] ],
+      [ "btn2:2.r", "bb1:16b.i", "black", [ "h57.8", "v93" ] ],
+      [ "btn1:2.r", "bb1:16b.h", "black", [ "h48.2", "v163.4" ] ],
+      [ "btn1:1.r", "esp:14", "green", [ "v0", "h38.6", "v528", "h57.6" ] ],
+      [ "btn2:1.r", "esp:12", "green", [ "v-3.2", "h29", "v460.8", "h28.8" ] ],
+      [ "btn3:1.r", "esp:13", "green", [ "v3.2", "h19.4", "v384", "h38.4" ] ],
+      [ "btn4:1.r", "esp:15", "green", [ "v-28.8", "h-105.4", "v480", "h163.2" ] ],
+      [ "btn5:1.r", "esp:16", "green", [ "v-22.4", "h-95.8", "v384", "h192" ] ],
+      [ "btn6:1.r", "esp:5", "green", [ "v310.4", "h115.4" ] ],
+      [ "bb1:17b.f", "bb1:16b.f", "black", [ "h0" ] ]
+    ],
+    "dependencies": {}
+  }
